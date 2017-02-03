@@ -4,7 +4,7 @@ MAINTAINER FXinnovation
 
 VOLUME /data
 
-ENV CHEF_VERSION=1.2.20
+ENV CHEF_VERSION=1.2.22
 
 ADD ./resources /resources
 
