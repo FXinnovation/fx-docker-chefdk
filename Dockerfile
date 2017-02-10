@@ -1,6 +1,6 @@
 FROM ubuntu:14.04.5
 
-MAINTAINER FXinnovation
+MAINTAINER FXinnovation <cloudsquad@fxinnovation.com>
 
 VOLUME /data
 
