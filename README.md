@@ -1,7 +1,7 @@
 # ChefDK 
 [![](https://images.microbadger.com/badges/version/fxinnovation/chefdk.svg)](https://microbadger.com/images/fxinnovation/chefdk "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/fxinnovation/chefdk.svg)](https://microbadger.com/images/fxinnovation/chefdk "Get your own image badge on microbadger.com")
 ## Description
-This image contains chefdk. The image is based on the official alpine image. It should be more lightweight this way.
+This image contains chefdk. The image is based on the official ubuntu image.
 
 ## Tags
 We push a `latest` tag on this repository, to run an older version please checkout the different tags.
