@@ -11,7 +11,7 @@ apt-get install -y curl
 # Downloading chefdk
 ###
 curl -sSlo /resources/chefdk.deb \
-  https://packages.chef.io/files/stable/chefdk/${CHEF_VERSION}/ubuntu/14.04/chefdk_${CHEF_VERSION}-1_amd64.deb
+  https://packages.chef.io/files/stable/chefdk/${CHEFDK_VERSION}/ubuntu/14.04/chefdk_${CHEFDK_VERSION}-1_amd64.deb
 
 ###
 # Installing chefdk
