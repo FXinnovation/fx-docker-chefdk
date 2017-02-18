@@ -4,6 +4,10 @@ VOLUME /data
 
 ENV CHEFDK_VERSION=1.2.22
 
+ARG BUILD_DATE
+ARG VCS_REF
+ARG VERSION
+
 ADD ./resources /resources
 
 RUN /resources/build && rm -rf /resources
