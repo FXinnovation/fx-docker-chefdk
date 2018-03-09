@@ -40,9 +40,7 @@ node {
       }
       stage("test") {
         // Testing Image Works
-        sh "docker run ${dockerhub_repo}:${tag_id} knife --version"
-        sh "docker run ${dockerhub_repo}:${tag_id} foodcritic --version"
-        sh "docker run ${dockerhub_repo}:${tag_id} rubocop --version"
+        sh "docker run ${dockerhub_repo}:${tag_id} chef --version"
         sh "docker inspect ${dockerhub_repo}:${tag_id}"
         message = "Docker build is successfull"
       }
