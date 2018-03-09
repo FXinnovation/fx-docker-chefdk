@@ -13,6 +13,6 @@ curl -sSlo /resources/chefdk.deb \
 dpkg -i /resources/chefdk.deb
 
 # Cleaning
-apt-get remove --purge curl
+apt-get remove --purge -y curl
 apt-get clean
 rm -rf /tmp/*
