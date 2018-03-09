@@ -1,20 +1,18 @@
 #!/bin/bash
 set -e -x
 
-###
 # Installing cURL
-###
 apt-get update
 apt-get install -y curl
 
-###
 # Downloading chefdk
-###
 curl -sSlo /resources/chefdk.deb \
-  https://packages.chef.io/files/stable/chefdk/${CHEFDK_VERSION}/ubuntu/14.04/chefdk_${CHEFDK_VERSION}-1_amd64.deb
+  https://packages.chef.io/files/stable/chefdk/${CHEFDK_VERSION}/ubuntu/16.04/chefdk_${CHEFDK_VERSION}-1_amd64.deb
 
-###
 # Installing chefdk
-###
 dpkg -i /resources/chefdk.deb
 
+# Cleaning
+apt-get remove --purge curl
+apt-get clean
+rm -rf /tmp/*

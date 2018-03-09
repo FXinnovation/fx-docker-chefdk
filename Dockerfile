@@ -1,8 +1,8 @@
-FROM ubuntu:14.04.5
+FROM ubuntu:xenial
 
 VOLUME /data
 
-ENV CHEFDK_VERSION=1.2.22
+ENV CHEFDK_VERSION=2.5.3
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -17,7 +17,7 @@ WORKDIR /data
 LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.name"="chefdk" \
       "org.label-schema.base-image.name"="docker.io/library/ubuntu" \
-      "org.label-schema.base-image.version"="14.04.5" \
+      "org.label-schema.base-image.version"="xenial" \
       "org.label-schema.description"="Chefdk in a container" \
       "org.label-schema.url"="https://www.chef.io" \
       "org.label-schema.vcs-url"="https://bitbucket.org/fxadmin/public-common-docker-chefdk" \
