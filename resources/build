@@ -12,6 +12,9 @@ curl -sSlo /resources/chefdk.deb \
 # Installing chefdk
 dpkg -i /resources/chefdk.deb
 
+# Installing stove
+chef exec gem install stove -v ${STOVE_VERSION}
+
 # Cleaning
 apt-get remove --purge -y curl
 apt-get clean
