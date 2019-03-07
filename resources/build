@@ -15,6 +15,11 @@ dpkg -i /resources/chefdk.deb
 # Installing stove
 chef exec gem install stove -v ${STOVE_VERSION}
 
+# CIS Hardening
+sed -i -e "s/^PASS_MAX_DAYS\s\+99999/PASS_MAX_DAYS   60/" /etc/login.defs
+sed -i -e "s/^PASS_MIN_DAYS\s\+0/PASS_MIN_DAYS	7/" /etc/login.defs
+sed -i -e "s/^UMASK\s\+022/UMASK	027/" /etc/login.defs
+
 # Cleaning
 apt-get remove --purge -y curl
 apt-get clean
