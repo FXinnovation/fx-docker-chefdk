@@ -17,7 +17,7 @@ chef exec gem install stove -v ${STOVE_VERSION}
 
 # CIS Hardening
 sed -i -e "s/^PASS_MAX_DAYS\s99999/PASS_MAX_DAYS   60/" /etc/login.defs
-sed -i -e "s/^PASS_MIN_DAYS\s0/PASS_MIN_DAYS	0/" /etc/login.defs
+sed -i -e "s/^PASS_MIN_DAYS\s0/PASS_MIN_DAYS	7/" /etc/login.defs
 set -i -e "s/^UMASK\s022/UMASK	027/" /etc/login.defs
 
 # Cleaning
