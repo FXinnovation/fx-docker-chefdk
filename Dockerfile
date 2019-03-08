@@ -3,7 +3,8 @@ FROM ubuntu:xenial
 VOLUME /data
 
 ENV CHEFDK_VERSION=3.8.14 \
-    STOVE_VERSION=6.0.0
+    STOVE_VERSION=6.0.0 \
+    NET_SSH_VERSION=5.1.0
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -26,6 +27,7 @@ LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.schema-version"="1.0.0-rc.1" \
       "org.label-schema.applications.chefdk.version"=$CHEFDK_VERSION \
       "org.label-schema.applications.stove.version"=$STOVE_VERSION \
+      "org.label-schema.applications.net-ssh.version"=$NET_SSH_VERSION \
       "org.label-schema.vcs-ref"=$VCS_REF \
       "org.label-schema.version"=$VERSION \
       "org.label-schema.build-date"=$BUILD_DATE \
