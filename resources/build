@@ -4,6 +4,7 @@ set -e -x
 # Installing cURL
 apt-get update
 apt-get install -y curl
+apt-get install -y build-essential
 
 # Downloading chefdk
 curl -sSlo /resources/chefdk.deb \
