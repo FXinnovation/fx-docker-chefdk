@@ -26,5 +26,6 @@ sed -i -e "s/^UMASK\s\+022/UMASK	027/" /etc/login.defs
 
 # Cleaning
 apt-get remove --purge -y curl
+apt-get remove --purge -y build-essential
 apt-get clean
 rm -rf /tmp/*
