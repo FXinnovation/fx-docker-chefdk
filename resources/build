@@ -15,6 +15,8 @@ dpkg -i /resources/chefdk.deb
 # Installing stove
 chef exec gem install stove -v ${STOVE_VERSION}
 chef exec gem install net-ssh -v ${NET_SSH_VERSION}
+chef exec gem install rabnacl -v ${RBNACL}
+chef exec gem install bcrypt_pbkdf -v ${BCRYPT_PBKDF}
 
 # CIS Hardening
 sed -i -e "s/^PASS_MAX_DAYS\s\+99999/PASS_MAX_DAYS   60/" /etc/login.defs

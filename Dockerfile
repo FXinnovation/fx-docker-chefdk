@@ -4,7 +4,9 @@ VOLUME /data
 
 ENV CHEFDK_VERSION=3.8.14 \
     STOVE_VERSION=6.0.0 \
-    NET_SSH_VERSION=5.1.0
+    NET_SSH_VERSION=5.1.0 \
+    RBNACL=5.0.0 \
+    BCRYPT_PBKDF=2.0.0
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -28,6 +30,8 @@ LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.applications.chefdk.version"=$CHEFDK_VERSION \
       "org.label-schema.applications.stove.version"=$STOVE_VERSION \
       "org.label-schema.applications.net-ssh.version"=$NET_SSH_VERSION \
+      "org.label-schema.applications.net-ssh.version"=$RBNACL \
+      "org.label-schema.applications.net-ssh.version"=$BCRYPT_PBKDF \
       "org.label-schema.vcs-ref"=$VCS_REF \
       "org.label-schema.version"=$VERSION \
       "org.label-schema.build-date"=$BUILD_DATE \
