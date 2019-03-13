@@ -17,6 +17,7 @@ dpkg -i /resources/chefdk.deb
 chef exec gem install stove -v ${STOVE_VERSION}
 chef exec gem install net-ssh -v ${NET_SSH_VERSION}
 chef exec gem install rbnacl -v ${RBNACL_VERSION}
+chef exec gem install rbnacl-libsodium -v ${RBNACL_LIBSODIUM_VERSION}
 chef exec gem install bcrypt_pbkdf -v ${BCRYPT_PBKDF_VERSION}
 
 # CIS Hardening

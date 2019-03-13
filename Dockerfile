@@ -5,7 +5,8 @@ VOLUME /data
 ENV CHEFDK_VERSION=3.8.14 \
     STOVE_VERSION=6.0.0 \
     NET_SSH_VERSION=5.1.0 \
-    RBNACL_VERSION=5.0.0 \
+    RBNACL_VERSION=4.0.2 \
+    RBNACL_LIBSODIUM_VERSION=1.0.16 \
     BCRYPT_PBKDF_VERSION=1.0.0
 
 ARG BUILD_DATE
@@ -30,8 +31,9 @@ LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.applications.chefdk.version"=$CHEFDK_VERSION \
       "org.label-schema.applications.stove.version"=$STOVE_VERSION \
       "org.label-schema.applications.net-ssh.version"=$NET_SSH_VERSION \
-      "org.label-schema.applications.net-ssh.version"=$RBNACL_VERSION \
-      "org.label-schema.applications.net-ssh.version"=$BCRYPT_PBKDF_VERSION \
+      "org.label-schema.applications.rbnacl.version"=$RBNACL_VERSION \
+      "org.label-schema.applications.rbnacl-libsodium.version"=$RBNACL_LIBSODIUM_VERSION \
+      "org.label-schema.applications.bcrypt_pbkdf.version"=$BCRYPT_PBKDF_VERSION \
       "org.label-schema.vcs-ref"=$VCS_REF \
       "org.label-schema.version"=$VERSION \
       "org.label-schema.build-date"=$BUILD_DATE \
