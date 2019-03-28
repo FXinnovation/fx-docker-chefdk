@@ -5,7 +5,7 @@ set -e -x
 apt-get update
 apt-get install -y curl
 apt-get install -y build-essential
-
+apt-get install -y git=${GIT_VERSION}
 # Downloading chefdk
 curl -sSlo /resources/chefdk.deb \
   https://packages.chef.io/files/stable/chefdk/${CHEFDK_VERSION}/ubuntu/16.04/chefdk_${CHEFDK_VERSION}-1_amd64.deb
@@ -19,8 +19,6 @@ chef exec gem install net-ssh -v ${NET_SSH_VERSION}
 chef exec gem install rbnacl -v ${RBNACL_VERSION}
 chef exec gem install rbnacl-libsodium -v ${RBNACL_LIBSODIUM_VERSION}
 chef exec gem install bcrypt_pbkdf -v ${BCRYPT_PBKDF_VERSION}
-chef exec gem install git -v ${GIT_VERSION}
-
 
 # CIS Hardening
 sed -i -e "s/^PASS_MAX_DAYS\s\+99999/PASS_MAX_DAYS   60/" /etc/login.defs
