@@ -37,6 +37,7 @@ LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.applications.rbnacl-libsodium.version"=$RBNACL_LIBSODIUM_VERSION \
       "org.label-schema.applications.git.version"=$GIT_VERSION \
       "org.label-schema.applications.bcrypt_pbkdf.version"=$BCRYPT_PBKDF_VERSION \
+      "org.label-schema.applications.kitchen-ansible.version"=$KITCHEN_ANSIBLE_VERSION \
       "org.label-schema.vcs-ref"=$VCS_REF \
       "org.label-schema.version"=$VERSION \
       "org.label-schema.build-date"=$BUILD_DATE \
