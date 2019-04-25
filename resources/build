@@ -19,6 +19,7 @@ chef exec gem install net-ssh -v ${NET_SSH_VERSION}
 chef exec gem install rbnacl -v ${RBNACL_VERSION}
 chef exec gem install rbnacl-libsodium -v ${RBNACL_LIBSODIUM_VERSION}
 chef exec gem install bcrypt_pbkdf -v ${BCRYPT_PBKDF_VERSION}
+chef exec gem install kitchen-ansible -v ${KITCHEN_ANSIBLE_VERSION}
 
 # CIS Hardening
 sed -i -e "s/^PASS_MAX_DAYS\s\+99999/PASS_MAX_DAYS   60/" /etc/login.defs
